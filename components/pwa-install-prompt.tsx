@@ -67,4 +67,33 @@ export function PWAInstallPrompt() {
               variant="ghost"
               size="icon"
               className="h-6 w-6"
-              onClick={handleDismiss
+              onClick={handleDismiss}
+            >
+              ✕
+            </Button>
+          </div>
+        </CardHeader>
+        <div className="px-6 pb-4 space-y-4">
+          <p className="text-sm text-gray-600">
+            Install our app to enjoy a seamless experience with offline capabilities.
+          </p>
+          <div className="flex gap-2">
+            <Button
+              className="flex-1"
+              onClick={handleInstall}
+            >
+              Install
+            </Button>
+            <Button
+              variant="outline"
+              className="flex-1"
+              onClick={handleDismiss}
+            >
+              Later
+            </Button>
+          </div>
+        </div>
+      </Card>
+    </div>
+  )
+}
